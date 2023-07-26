@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ESTILOS DEL HEADER */
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.header__logo__principal {
+  width: 180px;
+  height: 3rem;
+  background-image: url(./../assets/img/logo.svg);
+  background-repeat: no-repeat;
+}
+
+.header__formulario__busqueda {
+  display: flex;
+}
+
+.header__input-busqueda {
+  outline: none;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.268);
+  padding: 0.8rem 1rem 0.8rem 0.8rem;
+  width: 20rem;
+  border-radius: 25px;
+  display: none;
+}
+
+.header__input-busqueda::placeholder {
+  color: gray;
+}
+
+.bi.bi-search {
+  color: black;
+}
+
+.header__btn-administrador {
+  width: 8rem;
+  padding: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #2a7ae4;
+  border: 1px solid #2a7ae4;
+}
+
+/* ESTILOS DE LA SECTION AGREGAR PRODUCTO */
+
+.section__formulario-nuevo-producto {
+}
+
+.formulario__nuevo-producto__container {
+  margin: 0 auto;
+  width: 95%;
+  padding: 2rem 0 2rem 0;
+}
+
+/* ESTILOS DEL FORMULARIO DE AGREGAR PRODUCTO  */
+
+.section__formulario-nuevo-producto {
+  background-color: #f5f5f5;
+}
+
+.formulario__nuevo-producto-title {
+  margin-bottom: 1rem;
+}
+
+.label__url,
+.label__categoria,
+.label__nombre,
+.label__precio {
+  display: block;
+  width: 100%;
+  background-color: white;
+  margin-bottom: -3px;
+  color: gray;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  padding-right: 0;
+}
+
+.input__url,
+.input__categoria,
+.input__nombre,
+.input__precio,
+.input__textarea {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding-left: 0.3rem;
+  padding-bottom: 0.3rem;
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+  caret-color: #2a7be4b9;
+}
+
+.input__url:focus,
+.input__categoria:focus,
+.input__nombre:focus,
+.input__precio:focus {
+  outline: none;
+  border-bottom: 2px solid blue;
+}
+
+.input__btn-agregar-producto {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 2rem;
+  background: #2a7ae4;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+/* ESTILOS DEL SECTION CONTACTO */
+
+.contacto {
+  background-color: #eaf2fd;
+  padding: 1rem;
+}
+
+.contacto__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.contacto__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contacto__link {
+  color: black;
+}
+
+.label__name {
+  display: block;
+  width: 100%;
+  background-color: white;
+  margin-bottom: -3px;
+  color: gray;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  padding-right: 0;
+}
+
+.label__name:hover {
+  cursor: pointer;
+}
+
+.input__name:focus,
+.input__textarea:focus {
+  outline: none;
+  border-bottom: 2px solid blue;
+}
+
+.input__name {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding-left: 0.3rem;
+  padding-bottom: 0.3rem;
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+  caret-color: #2a7be4b9;
+}
+
+.input__textarea {
+  outline: none;
+  width: 100%;
+  padding: 0.5rem 0 0 0.3rem;
+  font-size: 1rem;
+  caret-color: #2a7be4b9;
+  border: none;
+  resize: none;
+}
+
+.input__button {
+  width: 40%;
+  margin-top: 2rem;
+  background: #2a7ae4;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+
+.input__button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ---------------------MEDIA QUERYS------------------------ */
+
+@media screen and (min-width: 0) {
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo__principal {
+    order: 1;
+  }
+  .header__input-busqueda {
+    order: 3;
+    display: block;
+  }
+
+  .header__btn-administrador {
+    order: 2;
+  }
+
+  .header__label {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__input-busqueda {
+    order: 0;
+  }
+
+  .bi.bi-search {
+    order: 1;
+    margin-left: -2rem;
+    color: gray;
+  }
+
+  .formulario__login__input-email,
+  .formulario__login__input-password {
+    width: 30%;
+  }
+
+  .contacto__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contacto__info {
+    margin: 0 auto;
+  }
+
+  .contacto__logo {
+    margin: 0;
+  }
+
+  .contacto__lista {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .contacto__formulario {
+    grid-column: 2/4;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header__container,
+  .contacto__formulario {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .input__button {
+    width: 30%;
+  }
+
+  .formulario__login__input-email,
+  .formulario__login__input-password {
+    width: 20%;
+  }
+
+  .formulario__nuevo-producto__container {
+    width: 40%;
+  }
+}
