@@ -264,6 +264,17 @@
     <p>Desarrollado por Isaac C. &copy;2023</p>
   </footer>
 
+  <script type="module" src="./../controllers/client-service.js"></script>
+  <script>
+
+    const btnLogin = document.querySelector(".header__btn-login");
+
+    btnLogin.addEventListener("click", function () {
+      // Cambiar la URL de la página actual al archivo HTML deseado
+      window.location.href = "./../screens/login.html";
+    });
+
+  </script>
 </body>
 
 </html>
