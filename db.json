@@ -3,30 +3,38 @@
     {
       "imagen": "https://m.media-amazon.com/images/I/71NX2NxhTHL._AC_UF894,1000_QL80_.jpg",
       "titulo": "Baby Yoda",
-      "precio": "60,00", 
-      "categoria" : "Star Wars",
-      "id" : "#111111"
+      "precio": "60,00",
+      "categoria": "Star Wars",
+      "id": "#111111"
     },
     {
       "imagen": "https://m.media-amazon.com/images/I/71NX2NxhTHL._AC_UF894,1000_QL80_.jpg",
       "titulo": "Baby Yoda",
-      "precio": "60,00", 
-      "categoria" : "Star Wars",
-      "id" : "#111111"
+      "precio": "60,00",
+      "categoria": "Star Wars",
+      "id": "#111111"
     },
     {
       "imagen": "https://m.media-amazon.com/images/I/71NX2NxhTHL._AC_UF894,1000_QL80_.jpg",
       "titulo": "Baby Yoda",
-      "precio": "60,00", 
-      "categoria" : "Star Wars",
-      "id" : "#111111"
+      "precio": "60,00",
+      "categoria": "Star Wars",
+      "id": "#111111"
     },
     {
       "imagen": "https://m.media-amazon.com/images/I/71NX2NxhTHL._AC_UF894,1000_QL80_.jpg",
       "titulo": "Baby Yoda",
-      "precio": "60,00", 
-      "categoria" : "Star Wars",
-      "id" : "#111111"
+      "precio": "60,00",
+      "categoria": "Star Wars",
+      "id": "#111111"
+    },
+    {
+      "imagen": "https://www.conmishijos.com/uploads/ocio_familia/significadonavidad-1.jpg",
+      "categoria": "Diversos",
+      "titulo": "navidad",
+      "precio": "60.00",
+      "descripcion": "navidad en familia",
+      "id": "Xj6M-7M"
     }
   ]
 }
