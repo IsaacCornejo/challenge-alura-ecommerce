@@ -12,7 +12,7 @@ btnAgregarProducto.addEventListener("click", () => {
   const descripcion = document.querySelector("#mensaje").value;
   console.log(imagen, categoria, titulo, precio, descripcion);
   clientServices
-    .crearCliente(imagen, categoria, titulo, precio, descripcion)
+    .crearProducto(imagen, categoria, titulo, precio, descripcion)
     .then((respuesta) => {
       window.location.href = "./../screens/registro-completado.html";
       imagen.value,
@@ -20,7 +20,7 @@ btnAgregarProducto.addEventListener("click", () => {
         categoria.value,
         titulo.value,
         precio.value,
-        (descripcion.value = "");
+        descripcion.value;
     })
     .catch((error) => {
       alert("Ocurrio un error");

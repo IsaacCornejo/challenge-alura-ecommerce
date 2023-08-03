@@ -4,37 +4,24 @@
       "imagen": "https://m.media-amazon.com/images/I/71NX2NxhTHL._AC_UF894,1000_QL80_.jpg",
       "titulo": "Baby Yoda",
       "precio": "60,00",
-      "categoria": "Star Wars",
+      "categoria": "StarWars",
       "id": "#111111"
     },
     {
-      "imagen": "https://m.media-amazon.com/images/I/71NX2NxhTHL._AC_UF894,1000_QL80_.jpg",
-      "titulo": "Baby Yoda",
-      "precio": "60,00",
-      "categoria": "Star Wars",
-      "id": "#111111"
-    },
-    {
-      "imagen": "https://m.media-amazon.com/images/I/71NX2NxhTHL._AC_UF894,1000_QL80_.jpg",
-      "titulo": "Baby Yoda",
-      "precio": "60,00",
-      "categoria": "Star Wars",
-      "id": "#111111"
-    },
-    {
-      "imagen": "https://m.media-amazon.com/images/I/71NX2NxhTHL._AC_UF894,1000_QL80_.jpg",
-      "titulo": "Baby Yoda",
-      "precio": "60,00",
-      "categoria": "Star Wars",
-      "id": "#111111"
-    },
-    {
-      "imagen": "https://www.conmishijos.com/uploads/ocio_familia/significadonavidad-1.jpg",
-      "categoria": "Diversos",
-      "titulo": "navidad",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2013/08/242303-exitos-exclusivos-xbox-360.jpg?tf=3840x",
+      "categoria": "Consolas",
+      "titulo": "Xbox",
       "precio": "60.00",
-      "descripcion": "navidad en familia",
-      "id": "Xj6M-7M"
+      "descripcion": "consola",
+      "id": "vdClDVT"
+    },
+    {
+      "imagen": "https://www.jbl.com.mx/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwdcb5d16f/JBL_PARTYBOX_ENCORE_ESSENTIAL_HERO_1605x1605px.png?sw=537&sfrm=png",
+      "categoria": "Diversos",
+      "titulo": "JBL Bocina",
+      "precio": "60.00",
+      "descripcion": "Bocina Bluetooh Marca JBL",
+      "id": "IsLXzMl"
     }
   ]
 }
