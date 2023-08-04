@@ -22,8 +22,15 @@ const crearProductoEditable = (imagen, titulo, precio, id) => {
   });
 };
 
+const eliminarProducto = (id) => {
+  return fetch(`http://localhost:3000/producto/${id}`, {
+    method: "DELETE",
+  });
+};
+
 export const clientServices = {
   listaClientes,
   crearProducto,
   crearProductoEditable,
+  eliminarProducto,
 };

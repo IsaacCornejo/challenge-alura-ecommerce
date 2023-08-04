@@ -14,7 +14,11 @@ const crearProductoEditable = (imagen, titulo, precio, id) => {
   imgContainer.append(iconosEdicionProducto);
 
   const iconoEdicion = document.createElement("i");
-  iconoEdicion.classList.add("bi", "bi-trash-fill");
+  iconoEdicion.classList.add(
+    "bi",
+    "bi-trash-fill",
+    "product__card__btnEliminiarProducto"
+  );
   iconosEdicionProducto.append(iconoEdicion);
 
   const iconoEliminar = document.createElement("i");
@@ -32,6 +36,21 @@ ${id}
 </p>
 `;
   linea.innerHTML += contenido;
+
+  const btnEliminar = linea.querySelector(
+    "i.product__card__btnEliminiarProducto"
+  );
+
+  btnEliminar.addEventListener("click", () => {
+    clientServices
+      .eliminarProducto(id)
+      .then((respuesta) => {
+        console.log(respuesta);
+        window.location.href = "./../screens/producto-eliminado.html";
+      })
+      .catch((err) => alert("Ocurrió un error"));
+  });
+
   return linea;
 };
 

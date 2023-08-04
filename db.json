@@ -5,15 +5,7 @@
       "titulo": "Baby Yoda",
       "precio": "60,00",
       "categoria": "StarWars",
-      "id": "#111111"
-    },
-    {
-      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2013/08/242303-exitos-exclusivos-xbox-360.jpg?tf=3840x",
-      "categoria": "Consolas",
-      "titulo": "Xbox",
-      "precio": "60.00",
-      "descripcion": "consola",
-      "id": "vdClDVT"
+      "id": "jkyusASD"
     },
     {
       "imagen": "https://www.jbl.com.mx/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwdcb5d16f/JBL_PARTYBOX_ENCORE_ESSENTIAL_HERO_1605x1605px.png?sw=537&sfrm=png",
@@ -22,6 +14,30 @@
       "precio": "60.00",
       "descripcion": "Bocina Bluetooh Marca JBL",
       "id": "IsLXzMl"
+    },
+    {
+      "imagen": "https://m.media-amazon.com/images/I/61pWhVxl+PL._AC_SL1500_.jpg",
+      "categoria": "Diversos",
+      "titulo": "Auriculares JBL",
+      "precio": "30.00",
+      "descripcion": "Auriculares Marca JBL",
+      "id": "6iRtaMX"
+    },
+    {
+      "imagen": "https://m.media-amazon.com/images/I/51epFROB-lL._AC_SL1002_.jpg",
+      "categoria": "Diversos",
+      "titulo": "Beats by Dr. Dre",
+      "precio": "60.00",
+      "descripcion": "Audifonos beats by dr.dre",
+      "id": "H-SJS2E"
+    },
+    {
+      "imagen": "https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/194735096039.jpg",
+      "categoria": "StarWars",
+      "titulo": "Darth Vader",
+      "precio": "20.00",
+      "descripcion": "Peluche de Darth Vader",
+      "id": "q2s9zA6"
     }
   ]
 }
