@@ -74,6 +74,10 @@ a {
   gap: 1rem;
 }
 
+.registro-completado__titulo {
+  text-align: center;
+}
+
 .bi.bi-check-circle {
   color: green;
   font-size: 5rem;

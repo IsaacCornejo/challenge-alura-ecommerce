@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./../styles/login.css">
+  <link rel="stylesheet" href="./../styles/main.css">
 
 
-  <title>Login - Comercio Electronico</title>
+  <title>Alura - Comercio Electronico</title>
 </head>
 
 <body>
@@ -22,6 +22,7 @@
         <div class="header__logo__principal"></div>
       </a>
 
+      <a href="#" class="header__btn-login">Login</a>
 
       <label for="header__formulario__busqueda" class="header__label">
         <input class="header__input-busqueda" type="text" name="busqueda" id="busqueda"
@@ -35,30 +36,30 @@
 
   <main class="main">
 
+    <div class="products">
 
-    <section class="section__formulario-login">
+      <section class="section__products">
+        <header class="section__products__header">
 
-      <div class="section__formulario-login__container">
+          <h2 class="products__title"></h2>
 
-        <h2 class="formulario__login-title">
-          Iniciar Sésion
-        </h2>
+          <a href="#" class="products__btn">
+            <i class="bi bi-arrow-left-short"></i>
+            Regresar
+          </a>
 
-        <form action="" class="formulario__login">
+        </header>
 
-          <input class="formulario__login__input-email" type="email" name="email" id="email"
-            placeholder="Escriba su correo electrónico" required>
-          <span class="formulario__login__validacion">El campo está vacio o no cumple con lo requerido.</span>
-          <input class="formulario__login__input-password" type="password" name="password" id="password"
-            placeholder="Escriba su contraseña" required>
-          <span class="formulario__login__validacion">El campo está vacio o no cumple con lo requerido.</span>
-          <a class="formulario__login-btn" href="#">Entrar</a>
-        </form>
+        <div class="products__container">
 
-      </div>
 
-    </section>
 
+        </div>
+
+      </section>
+
+
+    </div>
 
 
     <section class="contacto">
@@ -101,8 +102,23 @@
     <p>Desarrollado por Isaac C. &copy;2023</p>
   </footer>
 
+  <script type="module" src="./../controllers/client-controller-3.js"></script>
+  <script>
 
-  <script src="./../controllers/validaciones-login.js"></script>
+    const btnLogin = document.querySelector(".header__btn-login");
+    const btnRegresar = document.querySelector(".products__btn");
+
+    btnLogin.addEventListener("click", function () {
+      // Cambiar la URL de la página actual al archivo HTML deseado
+      window.location.href = "./../screens/login.html";
+    });
+
+    btnRegresar.addEventListener("click", () => {
+      window.location.href = "./../screens/index.html";
+
+    })
+
+  </script>
 </body>
 
 </html>

@@ -53,9 +53,9 @@
       <section class="section__products">
         <header class="section__products__header">
 
-          <h2 class="products__title">Star Wars</h2>
+          <h2 class="products__title">StarWars</h2>
 
-          <a href="#" class="products__btn">Ver todo
+          <a href="#" class="products__btn" id="btnStarWars">Ver todo
             <i class="bi bi-arrow-right-short"></i>
           </a>
 
@@ -73,7 +73,7 @@
         <header class="section__products__header">
           <h2 class="product__title">Consolas</h2>
 
-          <a href="#" class="products__btn">Ver todo
+          <a href="#" class="products__btn" id="btnConsolas">Ver todo
             <i class="bi bi-arrow-right-short"></i>
           </a>
         </header>
@@ -89,7 +89,7 @@
         <header class="section__products__header">
           <h2 class="products__title">Diversos</h2>
 
-          <a href="#" class="products__btn">Ver todo
+          <a href="#" class="products__btn" id="btnDiversos">Ver todo
             <i class="bi bi-arrow-right-short"></i>
           </a>
         </header>
@@ -143,16 +143,6 @@
   </footer>
 
   <script type="module" src="./../controllers/client-controller.js"></script>
-  <script>
-
-    const btnLogin = document.querySelector(".header__btn-login");
-
-    btnLogin.addEventListener("click", function () {
-      // Cambiar la URL de la página actual al archivo HTML deseado
-      window.location.href = "./../screens/login.html";
-    });
-
-  </script>
 </body>
 
 </html>

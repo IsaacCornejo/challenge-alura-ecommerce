@@ -1,7 +1,5 @@
 import { clientServices } from "../screens/service/client-service.js";
 
-console.log(clientServices);
-
 const crearNuevaLinea = (imagen, titulo, precio) => {
   const linea = document.createElement("article");
   linea.classList.add("product__card");
@@ -50,3 +48,31 @@ clientServices
     console.log(error);
     alert("Ocurrio un error");
   });
+
+//BOTONES DE VER TODO
+
+const btnLogin = document.querySelector(".header__btn-login");
+const btnStarWars = document.querySelector("#btnStarWars");
+const btnConsolas = document.querySelector("#btnConsolas");
+const btnDiversos = document.querySelector("#btnDiversos");
+const btnBanner = document.querySelector(".banner__btn");
+
+btnLogin.addEventListener("click", () => {
+  window.location.href = "./../screens/login.html";
+});
+
+btnBanner.addEventListener("click", () => {
+  window.location.href = "./../screens/ver-todo.html?category=Consolas";
+});
+
+btnStarWars.addEventListener("click", () => {
+  window.location.href = "./../screens/ver-todo.html?category=StarWars";
+});
+
+btnConsolas.addEventListener("click", () => {
+  window.location.href = "./../screens/ver-todo.html?category=Consolas";
+});
+
+btnDiversos.addEventListener("click", () => {
+  window.location.href = "./../screens/ver-todo.html?category=Diversos";
+});

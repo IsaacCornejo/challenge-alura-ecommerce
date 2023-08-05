@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./../styles/login.css">
+  <link rel="stylesheet" href="./../styles/nuevo-producto.css">
 
 
-  <title>Login - Comercio Electronico</title>
+  <title>Agregar - Comercio Electronico</title>
 </head>
 
 <body>
@@ -21,6 +21,8 @@
       <a href="./index.html" class="header__logo">
         <div class="header__logo__principal"></div>
       </a>
+
+      <a href="#" class="header__btn-administrador">Menu administrador</a>
 
 
       <label for="header__formulario__busqueda" class="header__label">
@@ -35,26 +37,38 @@
 
   <main class="main">
 
+    <section class="section__formulario-nuevo-producto">
 
-    <section class="section__formulario-login">
+      <div class="formulario__nuevo-producto__container">
 
-      <div class="section__formulario-login__container">
-
-        <h2 class="formulario__login-title">
-          Iniciar Sésion
+        <h2 class="formulario__nuevo-producto-title">
+          Editar producto
         </h2>
 
-        <form action="" class="formulario__login">
+        <form action="" class="formulario__nuevo-producto">
 
-          <input class="formulario__login__input-email" type="email" name="email" id="email"
-            placeholder="Escriba su correo electrónico" required>
-          <span class="formulario__login__validacion">El campo está vacio o no cumple con lo requerido.</span>
-          <input class="formulario__login__input-password" type="password" name="password" id="password"
-            placeholder="Escriba su contraseña" required>
-          <span class="formulario__login__validacion">El campo está vacio o no cumple con lo requerido.</span>
-          <a class="formulario__login-btn" href="#">Entrar</a>
+          <label class="label__url" for="URL">URL de la imagen</label>
+          <input class="input__url" type="text" name="URL" id="URL">
+
+          <label class="label__categoria" for="categoria">Categoría</label>
+          <select class="input__categoria" name="select">
+            <option value="StarWars">StarWars</option>
+            <option value="Consolas">Consolas</option>
+            <option value="Diversos" selected>Diversos</option>
+          </select>
+
+          <label class="label__nombre" for="nombre">Nombre del producto</label>
+          <input class="input__nombre" type="text" name="nombre" id="nombre">
+
+          <label class="label__precio" for="precio">Precio del producto</label>
+          <input class="input__precio" type="text" name="precio" id="precio">
+
+          <textarea class="input__textarea" name="mensaje" id="mensaje" cols="30" rows="5"
+            placeholder="Descripcion del producto"></textarea>
+
+          <input class="input__btn-editar-producto" type="button" value="Editar producto">
+
         </form>
-
       </div>
 
     </section>
@@ -89,6 +103,9 @@
             placeholder="Mensaje"></textarea>
 
           <input class="input__button" type="button" value="Enviar mensaje">
+
+
+
         </form>
       </div>
 
@@ -101,8 +118,21 @@
     <p>Desarrollado por Isaac C. &copy;2023</p>
   </footer>
 
+  <script type="module" src="./../controllers/registro-controller.js
+"></script>
+  <script type="module" src="./../controllers/actualizar-controller.js"></script>
 
-  <script src="./../controllers/validaciones-login.js"></script>
+  <script>
+
+    const btnAdministrador = document.querySelector(".header__btn-administrador");
+
+    btnAdministrador.addEventListener("click", function () {
+      // Cambiar la URL de la página actual al archivo HTML deseado
+      window.location.href = "./../screens/productos.html";
+    });
+
+  </script>
+
 </body>
 
 </html>

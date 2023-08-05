@@ -121,7 +121,8 @@ a {
   border-bottom: 2px solid blue;
 }
 
-.input__btn-agregar-producto {
+.input__btn-agregar-producto,
+.input__btn-editar-producto {
   display: block;
   margin: 0 auto;
   width: 100%;

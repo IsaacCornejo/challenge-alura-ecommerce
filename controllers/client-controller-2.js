@@ -22,7 +22,11 @@ const crearProductoEditable = (imagen, titulo, precio, id) => {
   iconosEdicionProducto.append(iconoEdicion);
 
   const iconoEliminar = document.createElement("i");
-  iconoEliminar.classList.add("bi", "bi-pencil-fill");
+  iconoEliminar.classList.add(
+    "bi",
+    "bi-pencil-fill",
+    "product__card__btnEditarProducto"
+  );
   iconosEdicionProducto.append(iconoEliminar);
 
   imgContainer.style.backgroundImage = `url(${imagen})`;
@@ -37,6 +41,8 @@ ${id}
 `;
   linea.innerHTML += contenido;
 
+  // ELIMINAR PRODUCTO
+
   const btnEliminar = linea.querySelector(
     "i.product__card__btnEliminiarProducto"
   );
@@ -44,11 +50,18 @@ ${id}
   btnEliminar.addEventListener("click", () => {
     clientServices
       .eliminarProducto(id)
-      .then((respuesta) => {
-        console.log(respuesta);
+      .then(() => {
         window.location.href = "./../screens/producto-eliminado.html";
       })
       .catch((err) => alert("Ocurrió un error"));
+  });
+
+  // EDITAR Y ACTUALIZAR PRODUCTO
+
+  const btnEditar = linea.querySelector("i.product__card__btnEditarProducto");
+  console.log(btnEditar);
+  btnEditar.addEventListener("click", () => {
+    window.location.href = `./../screens/editar-producto.html?id=${id}`;
   });
 
   return linea;
