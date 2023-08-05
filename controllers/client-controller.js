@@ -1,6 +1,6 @@
 import { clientServices } from "../screens/service/client-service.js";
 
-const crearNuevaLinea = (imagen, titulo, precio) => {
+const crearNuevaLinea = (imagen, titulo, precio, id) => {
   const linea = document.createElement("article");
   linea.classList.add("product__card");
   const imgContainer = document.createElement("div");
@@ -10,11 +10,18 @@ const crearNuevaLinea = (imagen, titulo, precio) => {
   const contenido = ` 
   <p class="product__card__title">${titulo}</p>
 <span class="product__card__price">
-  $${precio}
+$${precio}
 </span>
 <a href="#" class="product__card__link">Ver producto</a>
 `;
+
   linea.innerHTML += contenido;
+  const btnVerProducto = linea.querySelector(".product__card__link");
+  console.log(btnVerProducto);
+  btnVerProducto.addEventListener("click", () => {
+    window.location.href = `./../screens/desafio-producto.html?id=${id}`;
+  });
+
   return linea;
 };
 
@@ -30,7 +37,7 @@ clientServices
         producto.imagen,
         producto.titulo,
         producto.precio,
-        producto.categoria
+        producto.id
       );
 
       if (producto.categoria == "StarWars") {
