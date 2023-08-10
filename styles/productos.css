@@ -112,7 +112,7 @@ a {
 .bi.bi-pencil-fill {
   color: #2a7ae4;
   margin: 2px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .product__card__price {
@@ -208,7 +208,30 @@ a {
 
 /* ---------------------MEDIA QUERYS------------------------ */
 
-@media screen and (min-width: 0) {
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .productos__container {
+    flex-direction: column;
+  }
+  .product__card {
+    width: 100%;
+    align-items: center;
+  }
+  .product__card__img-container {
+    width: 80%;
+    height: 200px;
+    background-color: white;
+    background-size: contain;
+    background-position: center;
+  }
+  .product__card__title,
+  .product__card__price,
+  .product__card__id {
+    margin: 0 auto;
+  }
+  .bi.bi-trash-fill,
+  .bi.bi-pencil-fill {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
