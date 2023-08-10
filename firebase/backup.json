@@ -1,0 +1,44 @@
+{
+  "producto": [
+    {
+      "imagen": "https://www.jbl.com.mx/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwdcb5d16f/JBL_PARTYBOX_ENCORE_ESSENTIAL_HERO_1605x1605px.png?sw=537&sfrm=png",
+      "categoria": "Diversos",
+      "titulo": "JBL Bocina",
+      "precio": "60.00",
+      "descripcion": "Bocina Bluetooh Marca JBL",
+      "id": "IsLXzMl"
+    },
+    {
+      "imagen": "https://m.media-amazon.com/images/I/51epFROB-lL._AC_SL1002_.jpg",
+      "categoria": "Diversos",
+      "titulo": "Beats by Dr. Dre",
+      "precio": "60.00",
+      "descripcion": "Audifonos beats by dr.dre",
+      "id": "H-SJS2E"
+    },
+    {
+      "imagen": "https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/194735096039.jpg",
+      "categoria": "StarWars",
+      "titulo": "Darth Vader",
+      "precio": "20.00",
+      "descripcion": "Peluche de Darth Vader",
+      "id": "q2s9zA6"
+    },
+    {
+      "imagen": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ81GJFRTlrpWBzCILK45OCRFPhlV8LeQ6l2zduXDUYTHPk32I_JBQ0x9M4Hu2epJn_4suIVTd65z2VL0WsYRLA0IBPTEROgQ&usqp=CAY",
+      "categoria": "StarWars",
+      "titulo": "Baby Yodas",
+      "precio": "40.00",
+      "descripcion": "Baby Yoda de peluche",
+      "id": "TdYFGpc"
+    },
+    {
+      "imagen": "https://www.tradeinn.com/f/13975/139759843/microsoft-consola-xbox-series-x-1tb-forza-horizon-5-premium.jpg",
+      "categoria": "Consolas",
+      "titulo": "Xbox Series X",
+      "precio": "40.00",
+      "descripcion": "Consola Xbox Series X Microsoft",
+      "id": "pMEk_FD"
+    }
+  ]
+}

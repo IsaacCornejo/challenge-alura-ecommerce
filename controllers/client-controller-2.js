@@ -1,4 +1,4 @@
-import { clientServices } from "../screens/service/client-service.js";
+import { clientServices } from "./../screens/service/client-service.js";
 
 console.log(clientServices);
 

@@ -1,4 +1,4 @@
-import { clientServices } from "../screens/service/client-service.js";
+import { clientServices } from "./../screens/service/client-service.js";
 
 const crearNuevaLinea = (imagen, titulo, precio, id) => {
   const linea = document.createElement("article");

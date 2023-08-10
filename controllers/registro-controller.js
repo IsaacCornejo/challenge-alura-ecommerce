@@ -1,4 +1,4 @@
-import { clientServices } from "../screens/service/client-service.js";
+import { clientServices } from "./../screens/service/client-service.js";
 
 const btnAgregarProducto = document.querySelector(
   ".input__btn-agregar-producto"
