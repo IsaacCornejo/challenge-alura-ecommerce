@@ -57,3 +57,19 @@ clientServices
     console.log(error);
     alert("Ocurrio un error");
   });
+
+const inputBusqueda = document.querySelector(".header__input-busqueda");
+const btnBusqueda = document.querySelector(".header__btn-busqueda");
+btnBusqueda.addEventListener("click", () => {
+  if (!inputBusqueda.value == "") {
+    let busqueda = inputBusqueda.value;
+    window.location.href = `./../screens/busqueda.html?value=${busqueda}`;
+  }
+});
+
+inputBusqueda.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" && !inputBusqueda.value == "") {
+    let busqueda = inputBusqueda.value;
+    window.location.href = `./../screens/busqueda.html?value=${busqueda}`;
+  }
+});
