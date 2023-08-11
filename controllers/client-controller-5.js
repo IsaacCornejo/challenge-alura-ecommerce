@@ -1,6 +1,14 @@
 import { clientServices } from "./../screens/service/client-service.js";
 
-const crearNuevaLinea = (imagen, titulo, precio, id) => {
+const urlParams = new URLSearchParams(window.location.search);
+const value = urlParams.get("value");
+
+console.log(value);
+
+const tituloCategoria = document.querySelector(".products__title");
+tituloCategoria.innerHTML = `Resultados de busqueda de ${value}`;
+
+const crearNuevaLinea = (imagen, titulo, precio, categoria, id) => {
   const linea = document.createElement("article");
   linea.classList.add("product__card");
   const imgContainer = document.createElement("div");
@@ -10,12 +18,13 @@ const crearNuevaLinea = (imagen, titulo, precio, id) => {
   const contenido = ` 
   <p class="product__card__title">${titulo}</p>
 <span class="product__card__price">
-$${precio}
+  $${precio}
 </span>
 <a href="#" class="product__card__link">Ver producto</a>
 `;
 
   linea.innerHTML += contenido;
+
   const btnVerProducto = linea.querySelector(".product__card__link");
   btnVerProducto.addEventListener("click", () => {
     window.location.href = `./../screens/desafio-producto.html?id=${id}`;
@@ -24,9 +33,7 @@ $${precio}
   return linea;
 };
 
-const tableStarWars = document.querySelector("#StarWars");
-const tableConsolas = document.querySelector("#Consolas");
-const tableDiversos = document.querySelector("#Diversos");
+const table = document.querySelector(".products__container");
 
 clientServices
   .listaClientes()
@@ -36,17 +43,12 @@ clientServices
         producto.imagen,
         producto.titulo,
         producto.precio,
+        producto.categoria,
         producto.id
       );
 
-      if (producto.categoria == "StarWars") {
-        tableStarWars.appendChild(nuevaLinea);
-      }
-      if (producto.categoria == "Consolas") {
-        tableConsolas.appendChild(nuevaLinea);
-      }
-      if (producto.categoria == "Diversos") {
-        tableDiversos.appendChild(nuevaLinea);
+      if (producto.titulo.toLowerCase().includes(value.toLowerCase())) {
+        table.appendChild(nuevaLinea);
       }
     });
   })
@@ -54,34 +56,6 @@ clientServices
     console.log(error);
     alert("Ocurrio un error");
   });
-
-//BOTONES DE VER TODO
-
-const btnLogin = document.querySelector(".header__btn-login");
-const btnStarWars = document.querySelector("#btnStarWars");
-const btnConsolas = document.querySelector("#btnConsolas");
-const btnDiversos = document.querySelector("#btnDiversos");
-const btnBanner = document.querySelector(".banner__btn");
-
-btnLogin.addEventListener("click", () => {
-  window.location.href = "./../screens/login.html";
-});
-
-btnBanner.addEventListener("click", () => {
-  window.location.href = "./../screens/ver-todo.html?category=Consolas";
-});
-
-btnStarWars.addEventListener("click", () => {
-  window.location.href = "./../screens/ver-todo.html?category=StarWars";
-});
-
-btnConsolas.addEventListener("click", () => {
-  window.location.href = "./../screens/ver-todo.html?category=Consolas";
-});
-
-btnDiversos.addEventListener("click", () => {
-  window.location.href = "./../screens/ver-todo.html?category=Diversos";
-});
 
 const inputBusqueda = document.querySelector(".header__input-busqueda");
 const btnBusqueda = document.querySelector(".header__btn-busqueda");

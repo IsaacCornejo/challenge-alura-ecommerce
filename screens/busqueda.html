@@ -36,32 +36,21 @@
 
   <main class="main">
 
-    <section class="banner">
-      <div class="banner__image-info">
-        <h2 class="banner__title">
-          Febrero Promocional
-        </h2>
-        <p class="bammer">
-          Productos seleccionados con 33% de descuento
-        </p>
-        <a class="banner__btn" href="#">Ver Consolas</a>
-      </div>
-    </section>
-
     <div class="products">
 
       <section class="section__products">
         <header class="section__products__header">
 
-          <h2 class="products__title">StarWars</h2>
+          <h2 class="products__title"></h2>
 
-          <a href="#" class="products__btn" id="btnStarWars">Ver todo
-            <i class="bi bi-arrow-right-short"></i>
+          <a href="#" class="products__btn">
+            <i class="bi bi-arrow-left-short"></i>
+            Regresar
           </a>
 
         </header>
 
-        <div class="products__container" id="StarWars">
+        <div class="products__container">
 
 
 
@@ -69,35 +58,6 @@
 
       </section>
 
-      <section class="section__products">
-        <header class="section__products__header">
-          <h2 class="product__title">Consolas</h2>
-
-          <a href="#" class="products__btn" id="btnConsolas">Ver todo
-            <i class="bi bi-arrow-right-short"></i>
-          </a>
-        </header>
-
-        <div class="products__container" id="Consolas">
-
-
-        </div>
-
-      </section>
-
-      <section class="section__products">
-        <header class="section__products__header">
-          <h2 class="products__title">Diversos</h2>
-
-          <a href="#" class="products__btn" id="btnDiversos">Ver todo
-            <i class="bi bi-arrow-right-short"></i>
-          </a>
-        </header>
-
-        <div class="products__container" id="Diversos">
-        </div>
-
-      </section>
 
     </div>
 
@@ -142,10 +102,23 @@
     <p>Desarrollado por Isaac C. &copy;2023</p>
   </footer>
 
-  <script type="module" src="./../controllers/client-controller.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="./../controllers/validaciones-contacto.js"></script>
+  <script type="module" src="./../controllers/client-controller-5.js"></script>
+  <script>
 
+    const btnLogin = document.querySelector(".header__btn-login");
+    const btnRegresar = document.querySelector(".products__btn");
+
+    btnLogin.addEventListener("click", function () {
+      // Cambiar la URL de la página actual al archivo HTML deseado
+      window.location.href = "./../screens/login.html";
+    });
+
+    btnRegresar.addEventListener("click", () => {
+      window.location.href = "./../screens/index.html";
+
+    })
+
+  </script>
 </body>
 
 </html>
